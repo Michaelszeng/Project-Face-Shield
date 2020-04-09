@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- makes the webpage respond to resizing -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Homepage for platform">
+    <meta name="author" content="Michael Zeng, Subash Shibu">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+
+    </script>
+
+    <style>
+      #header-carousel {
+        height: 580px;
+      }
+      #carouselImg1 {
+        height: 580px;
+        background-image: url("Images/carouselImg1");
+        background-position: center center;
+        background-size: cover;
+      }
+      #carouselImg2 {
+        height: 580px;
+        background-image: url("Images/carouselImg2");
+        background-position: center center;
+        background-size: cover;
+      }
+      #carouselImg3 {
+        height: 580px;
+        background-image: url("Images/carouselImg3");
+        background-position: center center;
+        background-size: cover;
+      }
+      #navbarHome {
+        margin-top:4px;
+        margin-right:5px;
+        margin-left:5px;
+      }
+      .navbarMargins {
+        margin-top:4px;
+        margin-right:5px;
+        margin-left:5px;
+      }
+      p {
+        font-size:calc(11px + 0.6vw);
+      }
+      h1 {
+        color: rgba(240, 176, 0, 1);
+        margin-bottom:-10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#header-carousel" data-slide-to="1"></li>
+        <li data-target="#header-carousel" data-slide-to="2"></li>
+      </ul>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div id="carouselImg1" class="carousel-item active">
+        </div>
+        <div id="carouselImg2" class="carousel-item">
+        </div>
+        <div id="carouselImg3" class="carousel-item">
+        </div>
+        <img id="logoIMG" onclick="logoImgClick()" src="Logo.png" class="mx-auto d-block" style="opacity:0.85; width:calc(250px + 12vw); padding-top:120px;">
+      </div>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </body>
+</html>
